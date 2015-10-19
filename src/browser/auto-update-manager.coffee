@@ -79,11 +79,11 @@ class AutoUpdateManager
   getState: ->
     @state
 
-  scheduleUpdateCheck: ->
-    checkForUpdates = => @check(hidePopups: true)
-    fourHours = 1000 * 60 * 60 * 4
-    setInterval(checkForUpdates, fourHours)
-    checkForUpdates()
+  #scheduleUpdateCheck: ->
+  #  checkForUpdates = => @check(hidePopups: true)
+  #  fourHours = 1000 * 60 * 60 * 4
+  #  setInterval(checkForUpdates, fourHours)
+  #  checkForUpdates()
 
   check: ({hidePopups}={}) ->
     unless hidePopups
